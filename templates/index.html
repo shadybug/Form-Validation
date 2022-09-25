@@ -10,7 +10,8 @@
 
             <form id="form" action="" method="post">
                 <p>
-                    <input class="form-control" type="text" name="username" placeholder="Enter your username">
+                    <input class="form-control" type="text" name="username" id="username" placeholder="Enter your username" onkeydown="validation()">
+                    <span id="error_username"></span>
                 </p>
                 <p>
                     <input class="form-control" type="password" name="password" placeholder="Enter your password">
