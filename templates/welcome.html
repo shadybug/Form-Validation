@@ -6,6 +6,9 @@
     </head>
     <body>
         <h2>Welcome!</h2>
-        <p>Correct username and password.</p>
+
+        {% if message %}
+        <p class="valid">{{ message }}</p>
+        {% endif %}
     </body>
 </html>

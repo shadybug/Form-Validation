@@ -8,9 +8,13 @@
         <div class="wrapper">
             <h3>Account Login</h3>
 
+            {% if message %}
+            <p class="error">{{ message }}</p>
+            {% endif %}
+
             <form id="form" action="" method="post">
                 <p>
-                    <input class="form-control" type="text" name="username" id="username" placeholder="Enter your username" onkeydown="validation()">
+                    <input class="form-control" type="text" name="username" id="username" placeholder="Enter your username" onkeydown="validation()" onfocusout="validation()">
                     <span id="error_username"></span>
                 </p>
                 <p>
